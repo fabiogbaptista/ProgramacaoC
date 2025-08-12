@@ -1,0 +1,77 @@
+#include <stdio.h>
+
+int main() {
+
+    // Definindo variáveis
+    char estado1, estado2;
+    char codigocarta1[4], codigocarta2[4];
+    char cidade1[21], cidade2[21];
+    int populacaocidade1, populacaocidade2, numpturisticoscid1, numpturisticoscid2;
+    float areacidade1, areacidade2, pibcidade1, pibcidade2;
+
+    // Lendo dados da carta 1
+    
+    printf("Digita letra do estado 1: \n");
+    scanf(" %c", &estado1);
+    printf("Digita Código da carta 1: \n");
+    scanf("%3s", codigocarta1);
+
+    getchar(); // apenas 1 getchar para consumir o Enter antes do fgets
+    
+    printf("Digite nome da cidade 1: \n");
+    fgets(cidade1, sizeof(cidade1), stdin);
+    cidade1[strcspn(cidade1, "\n")] = '\0'; // remove \n
+    printf("Digite população da cidade 1: \n");
+    scanf("%d", &populacaocidade1);
+    printf("Digite a área em Km2 da cidade 1: \n");
+    scanf("%f", &areacidade1);
+    printf("Digite PIB da cidade 1 em bilhões de reais: \n");
+    scanf("%f", &pibcidade1);
+    printf("Digite Número de pontos turísticas da cidade 1: \n");
+    scanf("%d", &numpturisticoscid1);
+
+    // Lendo dados da carta 2
+    
+    printf("Digita letra do estado 2: \n");
+    scanf(" %c", &estado2);
+    printf("Digita Código da carta 2: \n");
+    scanf("%3s", codigocarta2);
+
+    getchar(); // apenas 1 getchar para consumir o Enter antes do fgets
+
+    printf("Digite nome da cidade 2: \n");
+    fgets(cidade2, sizeof(cidade2), stdin);
+    cidade2[strcspn(cidade2, "\n")] = '\0'; // remove \n
+    printf("Digite população da cidade 2: \n");
+    scanf("%d", &populacaocidade2);
+    printf("Digite a área em Km2 da cidade 2: \n");
+    scanf("%f", &areacidade2);
+    printf("Digite PIB da cidade 2 em bilhões de reais: \n");
+    scanf("%f", &pibcidade2);
+    printf("Digite Número de pontos turísticas da cidade 2: \n");
+    scanf("%d", &numpturisticoscid2);
+
+    // Imprimindo na tela a informação digitada da carta 1
+
+    printf("\n--- Carta 1: ---\n");
+    printf("Estado: %c\n", estado1);
+    printf("Código: %s\n", codigocarta1);
+    printf("Nome da Cidade: %s\n", cidade1);
+    printf("População: %d\n", populacaocidade1);
+    printf("Área: %.2f Km2\n", areacidade1);
+    printf("PIB: %.2f bilhões de reais\n", pibcidade1);
+    printf("Número de Pontos Turísticos: %d\n", numpturisticoscid1);
+
+    // Imprimindo na tela a informação digitada da carta 2
+
+    printf("\n--- Carta 2 ---:\n");
+    printf("Estado: %c\n", estado2);
+    printf("Código: %s\n", codigocarta2);
+    printf("Nome da Cidade: %s\n", cidade2);
+    printf("População: %d\n", populacaocidade2);
+    printf("Área: %.2f Km2\n", areacidade2);
+    printf("PIB: %.2f bilhões de reais\n", pibcidade2);
+    printf("Número de Pontos Turísticos: %d\n", numpturisticoscid2);
+
+return 0;
+}
