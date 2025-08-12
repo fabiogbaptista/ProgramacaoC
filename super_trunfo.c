@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 int main() {
 
@@ -16,12 +15,8 @@ int main() {
     scanf(" %c", &estado1);
     printf("Digita Código da carta 1: \n");
     scanf("%3s", codigocarta1);
-
-    getchar(); // apenas 1 getchar para consumir o Enter antes do fgets
-    
     printf("Digite nome da cidade 1: \n");
-    fgets(cidade1, sizeof(cidade1), stdin);
-    cidade1[strcspn(cidade1, "\n")] = '\0'; // remove \n
+    scanf(" %20[^\n]", cidade1);
     printf("Digite população da cidade 1: \n");
     scanf("%d", &populacaocidade1);
     printf("Digite a área em Km2 da cidade 1: \n");
@@ -37,12 +32,8 @@ int main() {
     scanf(" %c", &estado2);
     printf("Digita Código da carta 2: \n");
     scanf("%3s", codigocarta2);
-
-    getchar(); // apenas 1 getchar para consumir o Enter antes do fgets
-
-    printf("Digite nome da cidade 2: \n");
-    fgets(cidade2, sizeof(cidade2), stdin);
-    cidade2[strcspn(cidade2, "\n")] = '\0'; // remove \n
+     printf("Digite nome da cidade 2: \n");
+    scanf(" %20[^\n]", cidade2);
     printf("Digite população da cidade 2: \n");
     scanf("%d", &populacaocidade2);
     printf("Digite a área em Km2 da cidade 2: \n");
