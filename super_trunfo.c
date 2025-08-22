@@ -49,8 +49,8 @@ int main() {
     densidade_populacional2 = populacaocidade2 / areacidade2;
 
     // Calculando PIB per capita das cidades
-    pib_percapita1 = (pibcidade1 / populacaocidade1) * 1000000000;
-    pib_percapita2 = (pibcidade2 / populacaocidade2) * 1000000000;
+    pib_percapita1 = (pibcidade1 / populacaocidade1) * 1000000;
+    pib_percapita2 = (pibcidade2 / populacaocidade2) * 1000000;
 
     // Imprimindo na tela a informação digitada da carta 1
 
