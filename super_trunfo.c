@@ -8,6 +8,8 @@ int main() {
     char cidade1[21], cidade2[21];
     int populacaocidade1, populacaocidade2, numpturisticoscid1, numpturisticoscid2;
     float areacidade1, areacidade2, pibcidade1, pibcidade2;
+
+    //variaveis que vão ser calculadas
     float densidade_populacional1, densidade_populacional2, pib_percapita1, pib_percapita2;
 
     // Lendo dados da carta 1
