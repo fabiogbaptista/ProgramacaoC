@@ -80,5 +80,18 @@ int main() {
     printf("Densidade Populacional: %.2f habitantes/Km2\n", densidade_populacional2);
     printf("PIB per capita: %.2f mil reais\n", pib_percapita2);
 
+    // Comparando as cartas
+    printf("\n--- Comparação entre as cartas ---:\n");
+
+    printf("Comparação da População:\n");
+    printf("Cidade 1: %s - População: %d\n", cidade1, populacaocidade1);
+    printf("Cidade 2: %s - População: %d\n", cidade2, populacaocidade2);
+
+    if (populacaocidade1 > populacaocidade2) {
+        printf("A cidade %s tem maior população que a cidade %s.\n", cidade1, cidade2);
+    } else {
+        printf("A cidade %s tem menor ou igual população que a cidade %s.\n", cidade1, cidade2);
+    }
+
 return 0;
 }
